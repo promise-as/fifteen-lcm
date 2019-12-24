@@ -16,7 +16,7 @@ gulp.task('html', function() {
 gulp.task('css', function() {
   return gulp.src('src/sass/*.scss')
   .pipe(sass(
-    {outputStyle: 'expanded'}
+    {outputStyle: 'compact'}
   ).on('error', sass.logError))
   .pipe(autoprefixer(
     ['last 2 versions', 'Android >= 4.0'], { cascade: true })
